@@ -70,3 +70,59 @@ pricing adjustment — the spec itself doesn't mandate exact values.
   type, by brand and max price, or by availability only.
 - **Exception Handling**: custom checked exceptions are used instead of
   letting invalid operations crash the program.
+
+## Sample Output
+
+Below is a shortened example of what a session looks like — adding an
+SUV, registering a customer, renting the car, and returning it .
+
+```
+--- Car Rental System ---
+1. Register Customer
+2. Add Car
+3. View Available Cars
+4. Search Cars
+5. Rent Car
+6. Return Car
+7. View Customer Rentals
+8. View All Rentals
+9. Put Car Under Maintenance
+10. Return Car From Maintenance
+11. Exit
+Choose an option: 2
+Car Type (economy/luxury/suv/truck): suv
+ID: C1
+Brand: Honda
+Model: CR-V
+Year: 2023
+Base Price: 50
+Number of Seats: 5
+Four Wheel Drive (true/false): true
+Car added successfully.
+
+--- Car Rental System ---
+...
+Choose an option: 1
+ID: CUST1
+Full Name: Sara Ahmed
+Email: sara@example.com
+Phone: 0100000000
+Customer registered successfully.
+
+--- Car Rental System ---
+...
+Choose an option: 5
+Customer ID: CUST1
+Car ID: C1
+Start Date (yyyy-mm-dd): 2026-08-01
+Expected Return Date (yyyy-mm-dd): 2026-08-05
+Rental created. Estimated price: 220.0
+
+--- Car Rental System ---
+...
+Choose an option: 6
+Rental ID: R1
+Actual Return Date (yyyy-mm-dd): 2026-08-07
+Car returned. Final price: 250.0
+```
+
