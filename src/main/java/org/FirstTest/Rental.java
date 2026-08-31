@@ -5,7 +5,7 @@ import java.time.temporal.ChronoUnit;
 
 public class Rental {
 
-    private static final double LATE_FEE_PER_DAY=20.0;
+    private static final double LATE_FEE_PER_DAY=15.0;
     private String id;
     private Customer customer;
     private Car car;

@@ -24,7 +24,7 @@ public class SUV extends Car{
         double total=getBasePrice()*days;
         double surcharge =20;
 
-        if(numberOfSeats>4){
+        if(numberOfSeats>5){
             surcharge+=15;
         }
 

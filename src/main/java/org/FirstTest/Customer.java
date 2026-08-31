@@ -33,8 +33,8 @@ public class Customer {
         return phoneNumber;
     }
 
-    public List<Rental>getRentalHistory(){
-        return rentalHistory;
+    public List<Rental> getRentalHistory(){
+        return new ArrayList<>(rentalHistory);
     }
 
     public void addRental(Rental rental){
