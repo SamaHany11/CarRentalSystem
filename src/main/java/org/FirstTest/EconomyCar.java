@@ -15,7 +15,7 @@ public class EconomyCar extends Car{
     @Override
     public double calculatePrice(int days){
         double total =getBasePrice()*days;
-        double discount =total *0.50;
+        double discount =total *0.05;
         return total-discount;
     }
 
